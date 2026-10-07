@@ -1,0 +1,5 @@
+.env
+*.env
+.env.*
+docker-compose.yml.backup
+docker-compose.yml.bak
