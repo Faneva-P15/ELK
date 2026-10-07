@@ -9,7 +9,7 @@ services:
        - discovery.type=single-node
      # - xpack.security.enabled=true
        - xpack.security.http.ssl.enabled=false
-       - ELASTIC_PASSWORD=#Ff6windy098
+       - ELASTIC_PASSWORD=rakoto1234
        - ES_JAVA_OPTS=-Xms1g -Xmx1g
        - xpack.security.enabled=true
       # - ES_JAVA_OPTS=-Xms512m -Xmx512m
@@ -32,7 +32,7 @@ services:
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
       - ELASTICSEARCH_USERNAME=kibana_system
-      - ELASTICSEARCH_PASSWORD=#Ff6windy098
+      - ELASTICSEARCH_PASSWORD=rakoto1234
     volumes:
       - ./kibana/kibana.yml:/usr/share/kibana/config/kibana.yml:ro
 
@@ -63,7 +63,7 @@ services:
       - LS_JAVA_OPTS=-Xms256m -Xmx256m
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
       - ELASTICSEARCH_USERNAME=logstash_internal
-      - ELASTICSEARCH_PASSWORD=#Ff6windy098
+      - ELASTICSEARCH_PASSWORD=rakoto1234
     depends_on:
       - elasticsearch
 
